@@ -1,0 +1,37 @@
+body{
+    background-color: #F8E9DD;
+
+
+}
+
+
+
+  
+  .bar-chart {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+  
+    
+  }
+  
+  .bar  {
+    width: 20%;
+    background-color: #ec755d;
+    transition: height 0.3s ease;
+  }
+
+  .bar-sat{
+    width: 20%;
+    background-color:  #76B5BC;
+    transition: height 0.3s ease;
+  }
+  
+  .bar:hover {
+    background-color: #eb9685;;
+  }
+  
+  .bar-label {
+    text-align: center;
+    margin-top: 5px;
+  }
