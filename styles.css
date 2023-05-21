@@ -33,17 +33,16 @@
   }
 
   .balance {
-    margin-top: 0;
+  color: #ffd2ca;
    letter-spacing: 1px;
-    font-size: 16px;
+    font-size: 14px;
   }
 
   .balance-amount {
-    margin-top: 0;
-    margin-bottom: 0;
-    font-size: 26px;
+  font-size: 26px;
    font-weight: 600;
    letter-spacing: 1px;
+   margin: 0 0 0;
   }
 
   /* Main body section */
@@ -56,9 +55,9 @@
     font-weight: 600;
     letter-spacing: 1px;
 }
-  .body-section {
-    background-color: #f5f5f5;
-   
+ 
+  .chart-container{
+    background-color: #fffcf7;
   }
 
   .bar-chart {
@@ -81,14 +80,14 @@
     left: 50%;
     transform: translateX(-50%);
     display: none;
-   
-  margin-bottom: 5px;
+ padding: 5px;
+
     background-color: #382314;
 border-radius: 5px;
     z-index: 1;
     font-size: 16px;
     color: white;
-padding: 5px;
+
   }
 
   .bar-container:hover p {
@@ -100,10 +99,16 @@ padding: 5px;
     background-color: #ec755d;
   }
   .bar:hover{
-    background-color: #ec855d;
+    background-color: #ff9b87;
   }
 
+  .wed {
+    background-color: rgb(118, 181, 188);;
+  }
+.wed:hover{
+background-color: #b4dfe5;
 
+}
 
   .bar-label {
 color: #92857a;
@@ -144,17 +149,53 @@ color: #92857a;
   }
 
   /* Responsive styles */
-  /* @media only screen and (max-width: 576px) {
-   
+  @media (max-width: 576px) {
 
-    .container{
-        padding: 5px;
-        margin: none;
+    .balance {
+
+     letter-spacing: 1px;
+      font-size: 10px;
     }
-    .bar {
-        
-
-        background-color: #ec755d;
-      }
+   
+    .balance-amount {
   
-  } */
+      font-size: 18px;
+     font-weight: 600;
+     letter-spacing: 1px;
+     padding: 0 0 0 8px !important;
+     margin: 0 0 0 ;
+    }
+    .expenses {
+      font-size: 20px;
+      color: #382314;
+      font-weight: 600;
+   padding: 20px 0 0 20px !important;
+ 
+  }
+  
+
+  .bar-container {
+    width: 32px;
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+  }
+  .total-amount {
+    font-size: 30px;
+    font-weight: 600;
+   }
+  }
+
+
+  @media (min-width: 576px) {
+
+    .bar-container {
+      width: 50px;
+      position: relative;
+      display: inline-block;
+      cursor: pointer;
+    }
+
+
+
+  }
